@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyToDoApp</title>
+    <link rel = "icon" href="images.png" type = "image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyBSNc8OhubP_Wboen3LhU3lM0gp-xmEeq0",
+          authDomain: "mytodoapp-831aa.firebaseapp.com",
+          databaseURL: "https://mytodoapp-831aa.firebaseio.com",
+          projectId: "mytodoapp-831aa",
+          storageBucket: "mytodoapp-831aa.appspot.com",
+          messagingSenderId: "992748583899",
+          appId: "1:992748583899:web:966249b9395733dee885fe",
+          measurementId: "G-P2JNJMRRBX"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="h11">
+                <span class="s1">ToDo</span><span class="s2">List</span>
+            </div>
+        <div class="input">
+            <input placeholder="Enter Todo" type="text" id="todo-item" class="form-control form-rounded font-weight-bolder d-inline">
+            <button  onclick = "addTodo()" type="button" class="btn d-inline">Add Item</button>
+            <button type="button" class="btn clear" onclick="deleteAll()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+        </div>
+        <div class="content">
+            <ul id="list">
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
