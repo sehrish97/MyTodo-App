@@ -46,9 +46,10 @@ body{
     font-weight: bolder !important;
 }
 .btn1{
-    text-align: center !important;
+   text-align: center !important;
     font-family: sans-serif !important;
     font-size: 18px !important;
+    font-weight: bold !important;
     background-color: rgb(228, 118, 118) !important;
     border-radius: 2rem !important;
     border: solid rgb(54, 56, 73) !important;
@@ -56,27 +57,30 @@ body{
     /* /* width: 40px !important; */ 
     /* align-self: right !important; */
     position: absolute !important;
-    right: 1px !important;
-    top: 5px !important;  
+    right: 3px !important;
+    top: 3px !important;  
     bottom: 3px !important;
-    width: 55px !important;
+    width: auto !important;
+    padding-bottom: 2rem !important;
 }
 .btn2{
     text-align: center !important;
+    font-weight: bold !important;
     font-family: sans-serif !important;
     font-size: 18px !important;
     background-color: rgb(228, 118, 118) !important;
-    border-radius: 2rem !important;
-    border: solid rgb(54, 56, 73) !important;
+    border-radius: 50% !important;
+    /* border: solid rgb(54, 56, 73) !important; */
     /* font-weight: bolder !important; */
     /* /* width: 40px !important; */ 
     /* align-self: right !important; */
     position: absolute !important;
     right: 1px !important;
-    top: 5px !important;  
-    bottom: 3px !important;
-    margin-right: 4rem !important;
-    width: 55px !important;
+    top: 3px !important;  
+    bottom: 5px !important;
+    margin-right: 2rem !important;
+    width: auto !important;
+    padding-bottom: 2rem !important;
 }
 .btn1:hover {
     background-color: #f71302 !important;
